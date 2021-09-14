@@ -36,12 +36,16 @@ ml_collections
 ```
 !python3 eval.py --model {自己训练的模型路径} 
 ```
-6.用预训练模型训练
+6.用预训练模型预测，最后两个参数是存储预训练模型的路径的一部分
 ```
-!python3 eval.py --model_load True
+!python3 eval.py --model_load True --output_dir output_dir/ --name cifar100-100_500
 ```
 # 代码结构说明
-
+model文件夹下是模型结构，modeiling ViT主体部分，modeling_resnet Resnet部分，config定义了一些参数。
+utils文件夹下的data_utils是数据读取器，dist_utils是分布式训练，scheduler是学习率调整。
+train是训练脚本，eval是预测，设置好参数之后都可以意一键运行。
+ViB-T_16是下载好的预训练模型。
+output_dir下面是我们训练好的模型
 
 
 
