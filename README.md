@@ -36,10 +36,6 @@ ml_collections
 ```
 !python3 eval.py --model {自己训练的模型路径} 
 ```
-6.用预训练模型预测，最后两个参数是存储预训练模型的路径的一部分
-```
-!python3 eval.py --model_load True --output_dir output_dir/ --name cifar100-100_500
-```
 # 代码结构说明
 model文件夹下是模型结构，modeiling ViT主体部分，modeling_resnat
 output_dir下面是我们训练好的模型
