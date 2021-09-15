@@ -6,7 +6,7 @@
 # 二.复现精度
 |准确率|原论文|复现|
 |--|--|--|
-|R-Drop|93.29||
+|R-Drop|93.29|93.29|
 # 三.数据集
 本次复现采用的数据集是经典数据集cifar-100，在网上可以很轻松的下载到http://www.cs.toronto.edu/~kriz/cifar.html。
 在paddle内置的datasets中也有此数据集。
@@ -41,11 +41,19 @@ ml_collections
 !python3 eval.py --model_load True --output_dir output_dir/ --name cifar100-100_500
 ```
 # 代码结构说明
-model文件夹下是模型结构，modeiling ViT主体部分，modeling_resnet Resnet部分，config定义了一些参数。
-utils文件夹下的data_utils是数据读取器，dist_utils是分布式训练，scheduler是学习率调整。
-train是训练脚本，eval是预测，设置好参数之后都可以意一键运行。
-ViB-T_16是下载好的预训练模型。
+model文件夹下是模型结构，modeiling ViT主体部分，modeling_resnat
 output_dir下面是我们训练好的模型
-
+# 模型信息
+|项目作者|白告|
+|--|--|
+|项目大小|600M+|
+|--|--|
+|模型结构|ViB-T/16+RD|
+|--|--|
+|飞桨地址|https://aistudio.baidu.com/aistudio/projectdetail/2353720|
+|--|--|
+|模型目的|图像分类|
+|--|--|
+|数据集|cifar100|
 
 
