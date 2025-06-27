@@ -43,7 +43,7 @@ output_dir下面是我们训练好的模型
 |项目作者|白告|
 |--|--|
 |项目大小|600M+|
-|模型结构|ViB-T/16+RD|
+|模型结构|ViT-B/16+RD|
 |飞桨地址|https://aistudio.baidu.com/aistudio/projectdetail/2353720|
 |模型目的|图像分类|
 |数据集|cifar100|
